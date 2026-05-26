@@ -26,10 +26,10 @@ document.addEventListener("DOMContentLoaded", function () {
           "O Cumaru resgata a verdadeira alma da gastronomia nacional, unindo ingredientes nativos e técnicas contemporâneas. Uma viagem de sabores que vai desde os clássicos petiscos de boteco até os mais sofisticados cortes na brasa para nossos clientes.",
         overlay: "CARRO CHEFE",
         images: [
-          "./src/assets/img-principal-menu1.webp",
-          "./src/assets/img2-menu1.webp",
-          "./src/assets/img3-menu1.webp",
-          "./src/assets/img4-primeiro-menu.webp",
+          new URL("./assets/img-principal-menu1.webp", import.meta.url).href,
+          new URL("./assets/img2-menu1.webp", import.meta.url).href,
+          new URL("./assets/img3-menu1.webp", import.meta.url).href,
+          new URL("./assets/img4-primeiro-menu.webp", import.meta.url).href,
         ],
       },
       {
@@ -39,10 +39,11 @@ document.addEventListener("DOMContentLoaded", function () {
           "Nossa parrilla é o coração do Cumaru. Selecionamos os melhores cortes premium, preparados no fogo e na fumaça para garantir uma suculência inigualável e aquele sabor defumado que todo brasileiro ama.",
         overlay: "NA BRASA",
         images: [
-          "./src/assets/img-principal-churrasco.webp",
-          "./src/assets/img-churrasco1.webp",
-          "./src/assets/img-churrasco-3.webp",
-          "./src/assets/churrasco4.webp",
+          new URL("./assets/img-principal-churrasco.webp", import.meta.url)
+            .href,
+          new URL("./assets/img-churrasco1.webp", import.meta.url).href,
+          new URL("./assets/img-churrasco-3.webp", import.meta.url).href,
+          new URL("./assets/churrasco4.webp", import.meta.url).href,
         ],
       },
       {
@@ -52,10 +53,10 @@ document.addEventListener("DOMContentLoaded", function () {
           "Nossa carta de drinks é uma celebração aos sabores tropicais. Das caipirinhas clássicas com cachaças artesanais a coquetéis defumados e autorais, cada gole é uma experiência refrescante.",
         overlay: "MIXOLOGIA",
         images: [
-          "./src/assets/img-coquetel1.webp",
-          "./src/assets/img-coquetel-2.webp",
-          "./src/assets/img-principal-coquetel.webp",
-          "./src/assets/img-coquetel-3.webp",
+          new URL("./assets/img-coquetel1.webp", import.meta.url).href,
+          new URL("./assets/img-coquetel-2.webp", import.meta.url).href,
+          new URL("./assets/img-principal-coquetel.webp", import.meta.url).href,
+          new URL("./assets/img-coquetel-3.webp", import.meta.url).href,
         ],
       },
       {
@@ -65,10 +66,11 @@ document.addEventListener("DOMContentLoaded", function () {
           "Uma seleção rigorosa de queijos nobres, charcutaria artesanal, frutas frescas e bruschettas exclusivas. A pedida perfeita para harmonizar com nossa carta de vinhos e celebrar bons momentos à mesa.",
         overlay: "PARA DIVIDIR",
         images: [
-          "./src/assets/img-principal-culinaria.webp",
-          "./src/assets/img-petisco-2.webp",
-          "./src/assets/img-petiscos-4.webp",
-          "./src/assets/img-petiscos-3.webp",
+          new URL("./assets/img-principal-culinaria.webp", import.meta.url)
+            .href,
+          new URL("./assets/img-petisco-2.webp", import.meta.url).href,
+          new URL("./assets/img-petiscos-4.webp", import.meta.url).href,
+          new URL("./assets/img-petiscos-3.webp", import.meta.url).href,
         ],
       },
     ];
