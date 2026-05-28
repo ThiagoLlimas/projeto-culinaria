@@ -61,95 +61,13 @@ class AnalyticsManager {
     }
   }
 
-  // Google Analytics 4
+  // Google Analytics 4 - GA4 is now loaded directly in HTML files
+  // This method is kept for LGPD consent management only
   initializeAnalytics() {
     if (this.isInitialized || this.consent !== "granted") return;
 
-    // Google Analytics 4 -
-    const script1 = document.createElement("script");
-    script1.async = true;
-    script1.src = "https://www.googletagmanager.com/gtag/js?id=G-WC2QGCBDMQ";
-    document.head.appendChild(script1);
-
-    const script2 = document.createElement("script");
-    script2.innerHTML = `
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-WC2QGCBDMQ', {
-        'anonymize_ip': true,
-        'cookie_domain': 'auto',
-        'cookie_flags': 'SameSite=Lax;Secure'
-      });
-    `;
-    document.head.appendChild(script2);
-
-    /* ========================================
-   GOOGLE TAG MANAGER (GTM) - TEMPORARIAMENTE DESATIVADO
-   ========================================
-   
-   MOTIVO: Desativado temporariamente conforme solicitação.
-   STATUS: Código preservado para futura reativação.
-   
-   COMO REATIVAR:
-   1. Remover este bloco de comentários
-   2. Substituir GTM-XXXXXXX pelo Container ID real
-   3. Testar funcionamento no Google Tag Assistant
-   
-   NOTA: GTM é útil para gerenciar múltiplos scripts de terceiros
-   ========================================
-   
-    // Google Tag Manager - Substitua GTM-XXXXXXX com seu Container ID
-    const noscript = document.createElement('noscript');
-    noscript.innerHTML = `
-      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" 
-              height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    `;
-    document.body.insertBefore(noscript, document.body.firstChild);
-
-    const gtmScript = document.createElement('script');
-    gtmScript.innerHTML = `
-      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-XXXXXXX');
-    `;
-    document.head.appendChild(gtmScript);
-   */
-
-    /* ========================================
-   META PIXEL (FACEBOOK) - TEMPORARIAMENTE DESATIVADO
-   ========================================
-   
-   MOTIVO: Desativado temporariamente conforme solicitação.
-   STATUS: Código preservado para futura reativação.
-   
-   COMO REATIVAR:
-   1. Remover este bloco de comentários
-   2. Substituir XXXXXXXXXXXXXXXXXXXX pelo Pixel ID real
-   3. Testar funcionamento no Facebook Pixel Helper
-   
-   NOTA: Meta Pixel é essencial para campanhas de marketing no Facebook/Instagram
-   ========================================
-   
-    // Meta Pixel - Substitua XXXXXXXXXXXXXXXXXXXX com seu Pixel ID
-    const metaPixel = document.createElement('script');
-    metaPixel.innerHTML = `
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', 'XXXXXXXXXXXXXXXXXX');
-      fbq('track', 'PageView');
-    `;
-    document.head.appendChild(metaPixel);
-   */
-
+    // GA4 is initialized via HTML tags for proper Google Analytics validation
+    // This method only marks analytics as initialized for consent tracking
     this.isInitialized = true;
   }
 
