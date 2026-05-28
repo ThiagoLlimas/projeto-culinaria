@@ -20,7 +20,7 @@ class SEOManager {
       name: "Cumaru",
       description:
         "Restaurante premium especializado em culinária brasileira de fusão, unindo ingredientes nativos e técnicas contemporâneas.",
-      url: "https://cumaru-restaurante.com.br",
+      url: "https://cumaru-receitas.netlify.app",
       telephone: "+55 11 99999-0000",
       address: {
         "@type": "PostalAddress",
@@ -30,11 +30,11 @@ class SEOManager {
       servesCuisine: ["Brasileira", "Fusão", "Contemporânea"],
       priceRange: "$$$",
       image: [
-        "https://cumaru-restaurante.com.br/src/assets/img-principal-menu1.webp",
+        "https://cumaru-receitas.netlify.app/src/assets/img-principal-menu1.webp",
       ],
-      menu: "https://cumaru-restaurante.com.br/cardapio.html",
+      menu: "https://cumaru-receitas.netlify.app/cardapio.html",
       acceptsReservations: true,
-      reservationUrl: "https://cumaru-restaurante.com.br/reservas.html",
+      reservationUrl: "https://cumaru-receitas.netlify.app/reservas.html",
       sameAs: ["https://instagram.com/cumaru", "https://facebook.com/cumaru"],
       aggregateRating: {
         "@type": "AggregateRating",
