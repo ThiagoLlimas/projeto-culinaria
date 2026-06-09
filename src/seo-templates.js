@@ -103,7 +103,7 @@ export function generateSEOHead(pageKey, url) {
     <link rel="stylesheet" href="/src/lgpd-banner.css" />
     
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/grill.svg" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   `;
 }
