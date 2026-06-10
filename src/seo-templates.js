@@ -104,7 +104,7 @@ export function generateSEOHead(pageKey, url) {
     
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/grill.svg" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" href="/grill.svg" />
   `;
 }
 
