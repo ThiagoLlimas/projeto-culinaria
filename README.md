@@ -59,3 +59,24 @@ Ao interagir com o carrossel ou aceitar as diretrizes de privacidade, a interfac
 *   💼 **Desenvolvedor Responsável:** [Thiago Henrique — LinkedIn](https://www.linkedin.com/in/thiago-lima-271138270/)
 *   💻 **Confira meu Portfólio Principal:** [Thiago.dev](https://thiagolima-dev.vercel.app/)
 *   💬 **Orçamentos e Contato:** [Conversar no WhatsApp](https://wa.me/5531995263774)
+
+---
+
+## ⚙️ Como Executar o Projeto Localmente
+
+1. Clone este repositório:
+```bash
+git clone https://github.com/ThiagoLLimas/projeto-culinaria.git
+```
+Entre na pasta do projeto:
+```bash
+cd projeto-culinaria
+```
+Instale as dependências do Vite:
+```bash
+npm install
+```
+Execute o projeto localmente:
+```bash
+npm run dev
+```
