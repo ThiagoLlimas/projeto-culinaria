@@ -1,6 +1,6 @@
 # 🍽️ Cumaru — Alta Gastronomia Brasileira (Premium Landing Page)
 
-> Uma SPA (Single Page Application) conceitual desenvolvida para um restaurante de alta gastronomia focado em pratos e elementos da cultura brasileira. O projeto foi estruturado utilizando tecnologias nativas (Vanilla Stacks) de alta performance, unindo uma identidade visual sofisticada a regras de negócio funcionais de conversão.
+> Um site multipágina conceitual desenvolvida para um restaurante de alta gastronomia focado em pratos e elementos da cultura brasileira. O projeto foi estruturado utilizando tecnologias nativas (Vanilla Stacks) de alta performance, unindo uma identidade visual sofisticada a regras de negócio funcionais de conversão.
 
 ---
 
